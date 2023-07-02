@@ -22,9 +22,9 @@ void PrintArray(int[] array)
     System.Console.WriteLine("[" + string.Join(" | ", array) + "]");
 }
 
-int length = ReadInt("Введите размер массива: ");
+int size = ReadInt("Введите размер массива: ");
 int min = ReadInt("Введите наименьшее число в массиве: ");
 int max = ReadInt("Введите наибольшее число в массиве: ");
-int[] array = new int[8];
+int[] array = new int[size];
 FillArray(array, min, max);
 PrintArray(array);
